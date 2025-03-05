@@ -1,0 +1,40 @@
+{
+  "name": "tearoom-frontend-v3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/borisrosedev/tearoom-frontend-v3.git"
+  },
+  "author": "Boris Rose",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/borisrosedev/tearoom-frontend-v3/issues"
+  },
+  "homepage": "https://github.com/borisrosedev/tearoom-frontend-v3#readme",
+  "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-env": "^7.26.9",
+    "@eslint/js": "^9.21.0",
+    "@types/jest": "^29.5.14",
+    "babel-jest": "^29.7.0",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.21.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "prettier": "^3.5.3",
+    "sass": "^1.85.1",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0",
+    "webpack": "^5.98.0",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
