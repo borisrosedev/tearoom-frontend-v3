@@ -1,0 +1,21 @@
+@startuml
+
+title <font color="Green" size="20">Héritage entre BaseService et AuthService</font>
+
+abstract class BaseService {
+  +setLog()
+}
+
+
+class AuthService {
+
+  +login({ email, password })
+  +logout()
+
+}
+
+
+BaseService <|-- AuthService
+
+
+@enduml

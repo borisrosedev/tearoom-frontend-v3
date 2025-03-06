@@ -1,0 +1,9 @@
+{
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "semi": true,
+    "htmlWhitespaceSensitivity": "css",
+    "useTabs": false,
+    "printWidth": 80,
+    "proseWrap": "preserve"
+}

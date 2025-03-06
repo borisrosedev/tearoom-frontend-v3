@@ -1,11 +1,11 @@
 {
     "compilerOptions": {
-        "strict": true,
+        "strict": false,
         "esModuleInterop": true,
         "lib": ["DOM", "ESNext"],
         "target": "ESNext",
         "module": "ESNext"
     },
     "include": ["**/*.ts"],
-    "exclude": ["**/*node_modules"]
+    "exclude": ["**/*node_modules", "**/*.test.ts"]
 }

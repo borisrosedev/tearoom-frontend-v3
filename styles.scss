@@ -1,0 +1,13 @@
+//vendor
+@use "./src/sass/vendor/bulma.vendor";
+@use "./src/sass/base/base";
+
+// components
+
+
+//layout
+
+
+// pages
+@use "./src/sass/pages/landing.page";
+@use "./src/sass/pages/login.page"

@@ -1,0 +1,10 @@
+@startuml 
+skinparam style strictuml
+
+participant "Front-End" as FE #LightBlue
+participant "Back-End"  as BE #LightCoral
+
+FE --> BE : Requête HTTP(S)
+FE <-- BE : Response HTTP(S)
+
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+allowmixing
+
+object "John Doe" as JD {
+  firstName = "John"
+  lastName = "Doe"
+  id = 12
+  email = "john@doe.com"
+  password = "$12121212"
+}
+
+@enduml

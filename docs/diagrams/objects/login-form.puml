@@ -1,0 +1,43 @@
+@startuml
+allowmixing
+
+header Boris Rose
+title <font color="Green" size="20">Les objets composants le formulaire de connexion</font>
+
+
+package "Interfaces" as I {
+
+   interface FieldInterface {
+      id: string
+      type: string 
+      placeholder: string
+   }
+}
+
+
+
+
+json "email" as email #LightGreen {
+   "<b>id</b>":"email",
+   "<b>type</b>":"email",
+   "<b>placeholder</b>":"Entrer votre email"
+}
+
+json "password" as password #LightCoral {
+   "<b>id</b>":"password",
+   "<b>type</b>":"password",
+   "<b>placeholder</b>":"Entrer votre mot de passe"
+}
+
+
+
+map fields {
+ "email" *-> email
+ "password" *--> password
+}
+
+email *--> FieldInterface
+password *--> FieldInterface
+
+
+@enduml
