@@ -9,7 +9,7 @@
     "format:write": "prettier . --write",
     "format:check": "prettier . --check",
     "lint": "eslint . --fix",
-    "coverage":"jest --collect-coverage"
+    "coverage": "jest --collect-coverage"
   },
   "repository": {
     "type": "git",

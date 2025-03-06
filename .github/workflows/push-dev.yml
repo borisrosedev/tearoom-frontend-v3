@@ -2,9 +2,9 @@ name: Push-Dev WF
 run-name: ${{ github.actor }} is using the push-dev workflow 🚀
 on:
   push:
-    branches: [ "dev" ]
+    branches: ["dev"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   page_build:
 jobs:
   Init-Job:
@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['18.x', '20.x']
+        node-version: ["18.x", "20.x"]
     steps:
       - name: Copy the repo
         uses: actions/checkout@v4
@@ -32,8 +32,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version}}
-          cache: 'npm'
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
-      - name: Run test 
+      - name: Run test
         run: npm test

@@ -1,9 +1,7 @@
-function anchorComponent ({ href, content }) {
-    return(
-        `
+function anchorComponent({ href, content }) {
+  return `
             <a href="${href}">${content}</a>
-        `
-    )
+        `;
 }
 
-export default anchorComponent
+export default anchorComponent;
