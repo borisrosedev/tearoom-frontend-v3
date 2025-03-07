@@ -16,4 +16,24 @@
         overflow: hidden;
         border-radius: 50%;
     }
+
+    nav a  {
+        color: #fff;
+        position: relative;
+
+        &:hover::before {
+            width: 100%;
+        }
+
+
+        &::before {
+            transition: all ease 300ms;
+            position: absolute;
+            content: "";
+            background-color: #fff;
+            height: 2px;
+            width: 0%;
+            bottom: -10px;
+        }
+    }
 }

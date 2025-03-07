@@ -1,4 +1,4 @@
-import BaseContainer from "../../models/Base.container";
+import BaseContainer from "../../models/BaseContainer";
 import anchorComponent from "../../ui/components/anchor/anchor.component";
 
 export default class HeaderContainer extends BaseContainer {
@@ -12,13 +12,28 @@ export default class HeaderContainer extends BaseContainer {
 
     onInit(){
         this.headerNavBar = document.getElementById('header-navbar')
-        this.headerNavBar.innerHTML += anchorComponent({
-            href:"#login",
-            content: "Connexion"
-        })
-        + "<span aria-label='separation entre les propositions de navigation'>|</span>" + anchorComponent({
-            href: "#register",
-            content: "Inscription"
-        }) 
+
+        if(window.location.hash == "#login"){
+            this.headerNavBar.innerHTML  += anchorComponent({
+                href: "#register",
+                content: "Inscription"
+            }) 
+        } else if(window.location.hash == "#register") {
+            this.headerNavBar.innerHTML += anchorComponent({
+                href:"#login",
+                content: "Connexion"
+            })
+        } else {
+            this.headerNavBar.innerHTML  += anchorComponent({
+                href: "#login",
+                content: "Connexion"
+            }) + "<span>|</span>" + anchorComponent({
+                href: "#register",
+                content: "Inscription"
+            })
+        }
+
+        
+       
     }
 }

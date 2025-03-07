@@ -1,4 +1,4 @@
-import BaseContainer from "../models/Base.container"
+import BaseContainer from "../models/BaseContainer"
 
 export default interface RouteInterface {
     ui: (data:any) => string

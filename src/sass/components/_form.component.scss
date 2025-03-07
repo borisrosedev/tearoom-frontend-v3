@@ -1,0 +1,18 @@
+.form-component {
+    display: flex;
+    flex-direction: column;
+
+    &__fields {
+        display: flex;
+        flex-direction: column;
+
+        article {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+}
