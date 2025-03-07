@@ -1,10 +1,11 @@
 {
   "compilerOptions": {
+    "moduleResolution": "Nodenext",
     "strict": false,
     "esModuleInterop": true,
     "lib": ["DOM", "ESNext"],
     "target": "ESNext",
-    "module": "ESNext"
+    "module": "NodeNext"
   },
   "include": ["**/*.ts"],
   "exclude": ["**/*node_modules", "**/*.test.ts"]

@@ -1,0 +1,54 @@
+.not-found {
+    &__main {
+        background-color: rgba($color: #000000, $alpha: 0.8);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        h1 {
+            color: rgb(222, 105, 105);
+            font-size: 100px;
+            font-weight: 700;
+        }
+        p {
+            margin-block: 20px;
+        }
+
+       
+    }
+
+    &__navlink {
+        position: relative;
+   
+
+        &:hover {
+         
+            &::after {
+                width: 100%;  
+            }
+
+        }
+
+        &::after {
+            content: "";
+            background-color: #fff;
+            transition: all ease-in-out 600ms;
+            width: 0%;
+            height: 2px;
+            left: 0;
+            bottom: -10px;  
+            position: absolute;
+
+            
+        }
+    }
+
+    
+
+    &__explanation {
+        font-size: 20px;
+    }
+
+    
+}

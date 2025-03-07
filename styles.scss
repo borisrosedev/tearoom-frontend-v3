@@ -5,7 +5,10 @@
 // components
 
 //layout
+@use "./src/sass/layout/header.layout";
 
 // pages
+@use "./src/sass/pages/home.page";
+@use "./src/sass/pages/not-found.page";
 @use "./src/sass/pages/landing.page";
 @use "./src/sass/pages/login.page";
