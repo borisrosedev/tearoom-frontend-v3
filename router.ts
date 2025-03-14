@@ -3,6 +3,7 @@ import HomeContainer from "./src/ts/containers/home/Home.container";
 import LandingContainer from "./src/ts/containers/landing/Landing.container";
 import LoginContainer from "./src/ts/containers/login/Login.container";
 import headerLayout from "./src/ts/ui/layout/header/header.layout";
+import cartPage from "./src/ts/ui/pages/cart/cart.page";
 import homePage from "./src/ts/ui/pages/home/home.page";
 import landingPage from "./src/ts/ui/pages/landing/landing.page";
 import loginPage from "./src/ts/ui/pages/login/login.page";
@@ -40,6 +41,10 @@ const routes = {
     business: LoginContainer,
     ui: loginPage
   },
+  cart: {
+    path: "#cart",
+    ui: cartPage
+  },
   notfound: {
     ui: notFoundPage
   }
@@ -62,6 +67,10 @@ function router(h: string): void {
       new layout.header.business(window.onNavigate)
       new routes.home.business(window.onNavigate)
       break;
+    case routes.cart.path:
+        rootDiv.innerHTML += layout.header.ui() + cartPage()
+        new layout.header.business(window.onNavigate)
+        break;
     case routes.login.path: 
       rootDiv.innerHTML += layout.header.ui() + routes.login.ui();
       new layout.header.business(window.onNavigate)

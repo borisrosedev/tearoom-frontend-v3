@@ -17,7 +17,7 @@ function homePage () {
                         ${messageComponent({
                             id: "home-hero-section-usp-message",
                             header: "Ce que les autres n'ont pas",
-                            body: "Venez vous détendre dans une ambiance exceptionnelle mélangeant chic et élégance. Où nos hôtes et hotesses d'accueil de qualité exemplaire, seront à vos petits soins",
+                            body: "Venez vous détendre dans une ambiance exceptionnelle mélangeant chic et élégance. Un endroit,où nos hôtes et hotesses d'accueil de qualité exemplaire, seront à vos petits soins.",
                             classNames: "is-primary"
                         })}
                     </section>
